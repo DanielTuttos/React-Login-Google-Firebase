@@ -1,0 +1,60 @@
+
+.container-login {
+  background: linear-gradient(to left, rgb(255, 149, 0), rgb(255, 223, 66), rgb(255, 149, 0) );
+  width: 100%;
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  &__title {
+    color: #ffffff;
+    font-size: 50px;
+    // margin-bottom: 30px;
+  }
+  &__btn{
+    background-color: #ffffff;
+    border: none;
+    // width: 300px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    // margin-bottom: 30px;
+    img{
+    //   width: 10px;
+      height: 20px;
+      padding-right: 10px;
+    }
+  }
+  &__img-section{
+    background-color: #ffffff;
+    max-width: 80%;
+    // height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    img{
+      width: 70%;
+      animation: animation 3s infinite 1s;
+    }
+    h1{
+      margin-bottom: 20px;
+    }
+  }
+  @keyframes animation {
+    0% {
+      transform: translateY(0); /* Posición inicial de la imagen */
+    }
+    50% {
+      transform: translateY(-20px); /* Posición máxima de subida */
+    }
+    100% {
+      transform: translateY(0); /* Posición final de bajada */
+    }
+  }
+}
