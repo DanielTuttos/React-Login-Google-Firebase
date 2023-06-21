@@ -9,7 +9,7 @@ import { auth } from '../api/firebase.config';
 
 const AuthContext = createContext();
 
-export const AurhContextProvider = ({ children }) => {
+export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState({});
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider();

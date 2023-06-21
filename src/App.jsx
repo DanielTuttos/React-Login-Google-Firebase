@@ -1,13 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css';
 import styled from 'styled-components';
+import { AuthContextProvider, UserAuth } from './context/AuthContext';
+import { MyRoutes } from './routers/routes';
 
 function App() {
   return (
-    <Container>
-
-    </Container>
+    <AuthContextProvider>
+      <Container>
+        <MyRoutes />
+      </Container>
+    </AuthContextProvider>
   )
 }
 
